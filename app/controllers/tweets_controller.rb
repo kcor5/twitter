@@ -7,6 +7,7 @@ class TweetsController < ApplicationController
 		puts params[:tweet].inspect
 		@tweet = Tweet.new(tweet_params)
 		@tweet.save
+		redirect_to new_tweet_path
 	end
 
 
