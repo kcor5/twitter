@@ -17,6 +17,8 @@ class TweetsController < ApplicationController
 	end
 
 	def index
+		@tweets = Tweet.all
+		puts "@tweets are #{@tweets.inspect}"
 	end
 
 
