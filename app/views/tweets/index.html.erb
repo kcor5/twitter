@@ -1,3 +1,7 @@
 yo this is the index file
 
-<%=@tweets.inspect%>
+<ul>
+	<% @tweets.each do |tweet| %>
+		<li><%= tweet.content %></li>
+	<% end %>
+</ul>
