@@ -16,6 +16,8 @@ class TweetsController < ApplicationController
 		redirect_to new_tweet_path
 	end
 
+	def index
+	end
 
 
 	private
