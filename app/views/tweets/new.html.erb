@@ -1,5 +1,5 @@
 
-<%= flash[:success] %>
+
 <%= form_for @tweet do |f| %>
 	<%= f.text_field :content, placeholder: 'New Tweet here', id: 'foo'%>
 	<%= f.submit "Create the tweet" %>
